@@ -13,6 +13,13 @@ Generate a image
 Convert to U-BOOT logo format.
 
 ```bash
+docker pull soulteary/onecloud-uboot:logo-maker-2025.01.06
+docker run --rm -v `pwd`:/app soulteary/onecloud-uboot:logo-maker-2025.01.06 /app/logo.png
+```
+
+Or use golang run command:
+
+```bash
 go run main.go logo.png
 ```
 
